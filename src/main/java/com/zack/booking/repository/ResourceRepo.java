@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ResourceRepo extends JpaRepository<Resource, Integer> {
+public interface ResourceRepo extends JpaRepository<Resource, Long> {
     boolean existsByName(String name);
 }
